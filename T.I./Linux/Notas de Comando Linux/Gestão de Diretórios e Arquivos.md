@@ -4,8 +4,10 @@ na imagem temos a interpretação das informações para diretorios e arquivos q
 
 ## Alterando permissões
 -> permissão de leitura, excrita e execução 
+    
     - com numeros:
-chmod 770 /caminho/completo;
+        chmod 770 /caminho/completo;
+
 . podemos setar permissionamentos com numeros conforme a tabela a seguir
 <img width="456" height="499" alt="image" src="https://github.com/user-attachments/assets/3ca924ab-f355-416b-949a-649c983018ee" />
 
