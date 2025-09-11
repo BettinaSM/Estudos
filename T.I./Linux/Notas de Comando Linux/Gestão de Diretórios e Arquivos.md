@@ -19,27 +19,30 @@ na imagem temos a interpretação das informações para diretorios e arquivos q
         chmod u-rwx /caminho/completo;
 
 . o parametro u=usuario, g=grupo, o=outros
+
 . podemos colocar outros parametros ou apenas alguns especifico; colocar vircula, sem espaço entre itens para mais de um, respeitando a ordem de privilegios
 
 ## Modificação de Owner e Group Owner: 
-sudo chown userID:group /path/completo/
+        sudo chown userID:group /path/completo/
 
 # Recursivo: #Recursividade (-R) - Irá realizar a ação tem todo os subdiretórios e arquivos
-sudo chown -R userID:group /path/completo/
+        sudo chown -R userID:group /path/completo/
 
 ## Modificar somente group:
-sudo chown :group /path/completo/
+        sudo chown :group /path/completo/
 
 # Recursivo: #Recursividade (-R) - Irá realizar a ação tem todo os subdiretórios e arquivos
-sudo chown -R :group /path/completo/
+        sudo chown -R :group /path/completo/
 
 ## Modificar somente owner:
-sudo chown user: /path/completo/
+        sudo chown user: /path/completo/
 
 # Recursivo: #Recursividade (-R) - Irá realizar a ação tem todo os subdiretórios e arquivos
-sudo chown -R userID: /path/completo/
+        sudo chown -R userID: /path/completo/
 
 
 *links interessantes:*
+
 https://medium.com/@chetxn/day-6-linux-file-permissions-and-access-control-lists-1b362b7a961
-https://www.certificacaolinux.com.br/guia-completo-sobre-o-comando-chmod-no-linux-gerencie-permissoes-de-arquivos-e-diretorios/<img width="1152" height="82" alt="image" src="https://github.com/user-attachments/assets/ca52eabb-dfca-4ece-b16c-c7f4962d3c54" />
+
+https://www.certificacaolinux.com.br/guia-completo-sobre-o-comando-chmod-no-linux-gerencie-permissoes-de-arquivos-e-diretorios/
