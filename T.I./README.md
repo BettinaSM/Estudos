@@ -7,6 +7,8 @@ Este diretório contém meus estudos e práticas em **Tecnologia da Informação
 
 - O trajeto do meu conhecimento
 - Aprender a usar **Linux e linha de comando** no dia a dia.
+- Conquistas no Learn da Microsoft
+- Conhecimentos de acessos
 
 
 ## 🚀 Projetos e exemplos
