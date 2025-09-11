@@ -14,7 +14,7 @@
       ssh-keygen -b 3072 -t rsa ; - Gera chave
       wc -l /home/conta/.ssh/id_rsa.pub; Verifica-se as linhas - Sempre tem que ter 1
   
--Pegar chave gerada: 
+- Pegar chave gerada: 
 
       cat /home/conta/.ssh/id_rsa.pub
 
