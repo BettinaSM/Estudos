@@ -127,8 +127,14 @@ cp -p /etc/sudoers /etc/sudoers.bkp
 
 ls -l /etc/sudoers /etc/sudoers.bkp
 
-## Chave RSA
+## Log de autenticação
+      /var/log/auth.log
+      /var/log/secure
 
+- exemplo de busca:
+
+      cat /var/log/secure | grep -i UserID| grep -i  failed;
+      sudo grep root /var/log/secure | tail;
 
 ## ACL Processos
 # 1° Backup da ACL:
@@ -156,7 +162,8 @@ g : grupo
 
 o : other
 
-exemplo: <img width="474" height="245" alt="image" src="https://github.com/user-attachments/assets/753e18d0-036a-44f1-aed7-861eaab042c9" />
+exemplo: 
+<img width="474" height="245" alt="image" src="https://github.com/user-attachments/assets/753e18d0-036a-44f1-aed7-861eaab042c9" />
 
 
 # Remove a ACL do path - Recursivo (b - remove / -R recusrsivo)
