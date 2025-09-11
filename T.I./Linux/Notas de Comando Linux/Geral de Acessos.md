@@ -59,6 +59,15 @@ sudo /user/sbin/useradd -c "gecos_da_sua_escolha" -d /home/*UserID* -s /bin/bash
 
 -> setamos com uma senha via hash mas podemos não incluir, para isso seria necessaro remover da linha do comando -p **hash**
 
+## Deleção de usuário
+sudo userdel *UserID*;
+
+## Validando se o user esta logado
+who | grep *UserID*;
+
+## Validando processos de usuario
+ps -ef | grep -i *UserID*;
+
 ## User que senha não pode expirar ou trocar
 -> comum em users de serviços
 
@@ -118,4 +127,5 @@ cp -p /etc/sudoers /etc/sudoers.bkp
 
 ls -l /etc/sudoers /etc/sudoers.bkp
 
+## Chave RSA
 
