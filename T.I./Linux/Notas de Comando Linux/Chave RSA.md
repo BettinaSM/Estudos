@@ -1,5 +1,5 @@
 ### Chave RSA / Chave Trocada / Chave ssh / Relação de confiança
-***Importante*** 
+***Importante*** o tamanho da chave RSA em bits pode alterar dependendo do padrão de segurança, da versão do s.o., ou distro do linux
 
 # Gerar chave ssh (RSA)
 
