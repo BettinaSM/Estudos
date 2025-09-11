@@ -36,7 +36,7 @@ sudo chown user: /path/completo/
 # Recursivo: #Recursividade (-R) - Irá realizar a ação tem todo os subdiretórios e arquivos
 sudo chown -R userID: /path/completo/
 
-## Criação de ACL
-links interessantes:
+
+*links interessantes:*
 https://medium.com/@chetxn/day-6-linux-file-permissions-and-access-control-lists-1b362b7a961
 https://www.certificacaolinux.com.br/guia-completo-sobre-o-comando-chmod-no-linux-gerencie-permissoes-de-arquivos-e-diretorios/<img width="1152" height="82" alt="image" src="https://github.com/user-attachments/assets/ca52eabb-dfca-4ece-b16c-c7f4962d3c54" />
