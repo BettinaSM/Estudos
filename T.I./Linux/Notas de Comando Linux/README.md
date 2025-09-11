@@ -1,0 +1,3 @@
+- Comandos para gerenciamento de ambiente Linux.
+- Comandos de acessos e investigação.
+- Comandos de rede.
