@@ -129,3 +129,40 @@ ls -l /etc/sudoers /etc/sudoers.bkp
 
 ## Chave RSA
 
+
+## ACL Processos
+# 1° Backup da ACL:
+            find <diretorio> -type d -ls > path/diretorios
+            find <diretorio> -type f -ls > path/arquivos
+
+# 2 ° Verificar como esta a ACL
+            getfacl
+
+# 3° Realizar modificação na Acess Control List
+            sudo find <diretorio> -xdev -type d -exec setfacl -m d:u:UserID:rwx,u:UserID:rwx {} \;
+            sudo find <diretorio> -xdev -type f -exec setfacl -m u:UserID:rwx {} \;
+
+
+-type d : diretório
+
+-type f : file
+
+
+d: : default - Somente em diretório
+
+u : user
+
+g : grupo
+
+o : other
+
+exemplo: <img width="474" height="245" alt="image" src="https://github.com/user-attachments/assets/753e18d0-036a-44f1-aed7-861eaab042c9" />
+
+
+# Remove a ACL do path - Recursivo (b - remove / -R recusrsivo)
+            setfacl -Rb /path/que/quer/remover/acl
+
+
+# Restore de ACL
+            setfacl --restore=/root/acl.backup
+
