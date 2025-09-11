@@ -2,6 +2,7 @@
   -> executar comandos como root ou com usuario em especifico que tem acesso a crontab e com o agendamento desejado para alteração
 
 🔹Listar agendamentos do usuário atual
+
 crontab -l;
 
 🔹Filtrar no list do contrab
