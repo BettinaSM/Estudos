@@ -10,8 +10,10 @@ chmod 770 /caminho/completo;
 <img width="456" height="499" alt="image" src="https://github.com/user-attachments/assets/3ca924ab-f355-416b-949a-649c983018ee" />
 
     - com  letras
+    
         - incluindo:
 chmod u+rwx /caminho/completo;
+
         - removendo:
 chmod u-rwx /caminho/completo;
 
