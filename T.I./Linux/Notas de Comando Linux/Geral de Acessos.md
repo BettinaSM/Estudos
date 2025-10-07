@@ -163,6 +163,7 @@ g : grupo
 o : other
 
 exemplo: 
+
 <img width="474" height="245" alt="image" src="https://github.com/user-attachments/assets/753e18d0-036a-44f1-aed7-861eaab042c9" />
 
 
