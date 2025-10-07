@@ -17,11 +17,18 @@ resultados            # diretorio onde as wo seram registradas (sera pedido) e c
 - Ao executar teremos a seguinte organixação para cada incidente setado:
 
 resultados/
+
   INCxxxxx/
+  
     usuario_ldap
+    
     usuario_local
+    
     presente_group
+    
     privilegio_sudoers
+    
     remocao_ok
+    
 
 Obs uma melhoria seria deixar separado para cada usuario em especifico mas assim ele ja separa o todo indicando o usuario no arquivo criado do que ainda é necessario remover
