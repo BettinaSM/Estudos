@@ -5,41 +5,41 @@
 
 🔹Listar agendamentos do usuário atual
 
-crontab -l;
+    crontab -l;
 
 
 🔹Filtrar no list do contrab
 
-crontab -l | grep '**palavra_chave**';
+    crontab -l | grep '**palavra_chave**';
 
 
 🔹Editar agendamentos do usuário atual
 
-crontab -e;
+    crontab -e;
 
 
 🔹Remover todos os agendamentos do usuário atual
 
   -> cuidado apaga tudo sem perguntar:
   
-contrab -r;
+    contrab -r;
 
   -> pergunta antes de apagar:
   
-crontab -i -r;
+    crontab -i -r;
 
 
 🔹Instalar um arquivo como crontab do usuário
 
   -> Substitui a crontab atual pelo conteúdo do arquivo
   
-crontab nome_arquivo;
+    crontab nome_arquivo;
 
 🔹Editar/Listar a crontab de outro usuário (como root)
 
-crontab -u usuario -e;   # editar
+    crontab -u usuario -e;   # editar
 
-crontab -u usuario -l;   # listar
+    crontab -u usuario -l;   # listar
 
 
 🔹Acesso crontab 
