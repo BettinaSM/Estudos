@@ -1,7 +1,7 @@
-### Chave RSA / Chave Trocada / Chave ssh / Relação de confiança
+# Chave RSA / Chave Trocada / Chave ssh / Relação de confiança
 ***Importante*** o tamanho da chave RSA em bits pode alterar dependendo do padrão de segurança, da versão do s.o., ou distro do linux
 
-# Gerar chave ssh (RSA)
+## Gerar chave ssh (RSA)
 
 - Virar usuário "sudo su - [User ID que será gerado]"
   
@@ -23,7 +23,7 @@
   
       /home/conta/.ssh/id_rsa.pub
 
-# copiando / passando chave RSA
+## Copiando / passando chave RSA
 -modo simplificado: A chave RSA é enviada para o arquivo:  /home/conta/.ssh/authorized_keys
 
       ssh-copy-id -i ~/.ssh/id_rsa.pub login@servidor_destino
