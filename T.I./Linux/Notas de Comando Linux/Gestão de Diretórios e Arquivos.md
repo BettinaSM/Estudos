@@ -1,5 +1,6 @@
-## interpretando as informações de diretorios e arquivos no linux
+## Interpretando as informações de diretorios e arquivos no linux
 na imagem temos a interpretação das informações para diretorios e arquivos quanto a permissão, tipo, donos, nome data, tamanho
+
 <img width="888" height="708" alt="image" src="https://github.com/user-attachments/assets/08c16964-4a2b-43ce-9248-0f34e1a0d748" />
 
 ## Alterando permissões
@@ -9,6 +10,7 @@ na imagem temos a interpretação das informações para diretorios e arquivos q
         chmod 770 /caminho/completo;
 
 . podemos setar permissionamentos com numeros conforme a tabela a seguir
+
 <img width="456" height="499" alt="image" src="https://github.com/user-attachments/assets/3ca924ab-f355-416b-949a-649c983018ee" />
 
     - com  letras
