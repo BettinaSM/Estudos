@@ -10,7 +10,7 @@
     - name: Criar diretório base de resultados
       delegate_to: localhost
       file:
-        path: "resultados/{{ wo }}"
+        path: "resultados/{{ inc }}"
         state: directory
 
     - name: Coletar data atual do host
@@ -26,7 +26,7 @@
       delegate_to: localhost
       copy:
         content: "{{ inventory_hostname }} | {{ date_output.stdout }} | {{ usuario_ldap.stdout }}"
-        dest: "resultados/{{ wo }}/usuario_ldap"
+        dest: "resultados/{{ inc }}/usuario_ldap"
         mode: '0644'
       when: usuario_ldap.rc == 0
 
@@ -39,7 +39,7 @@
       delegate_to: localhost
       copy:
         content: "{{ inventory_hostname }} | {{ date_output.stdout }} | {{ usuario_local.stdout }}"
-        dest: "resultados/{{ wo }}/usuario_local"
+        dest: "resultados/{{ inc }}/usuario_local"
         mode: '0644'
       when: usuario_local.rc == 0
 
@@ -52,7 +52,7 @@
       delegate_to: localhost
       copy:
         content: "{{ inventory_hostname }} | {{ date_output.stdout }} | {{ presente_group.stdout }}"
-        dest: "resultados/{{ wo }}/presente_group"
+        dest: "resultados/{{ inc }}/presente_group"
         mode: '0644'
       when: presente_group.rc == 0
 
@@ -65,7 +65,7 @@
       delegate_to: localhost
       copy:
         content: "{{ inventory_hostname }} | {{ date_output.stdout }} | {{ privilegio_sudoers.stdout }}"
-        dest: "resultados/{{ wo }}/privilegio_sudoers"
+        dest: "resultados/{{ inc }}/privilegio_sudoers"
         mode: '0644'
       when: privilegio_sudoers.rc == 0
 
@@ -73,7 +73,7 @@
       delegate_to: localhost
       copy:
         content: "{{ inventory_hostname }} | {{ date_output.stdout }} | Nenhum item encontrado"
-        dest: "resultados/{{ wo }}/remocao_ok"
+        dest: "resultados/{{ inc }}/remocao_ok"
         mode: '0644'
       when:
         - usuario_ldap.rc != 0
