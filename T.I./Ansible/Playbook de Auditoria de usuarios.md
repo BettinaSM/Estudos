@@ -4,10 +4,15 @@ O playbook trata-se de uma validação nos ambientes linux e aix, que possuem ac
 Nele vamos validar se o user ldap esta ativo ou se o usuario é local, grupos e privilegios no sudoers.
 
 - estrutura:
+
 inventario_hosts.txt     # lista de hosts (inventário ansible - ja existe mas talvez falte servidor)
+
 user.txt                 # contém a variável user (nome do usuário a ser auditado)
+
 playbook.yml             # playbook principal
+
 resultados            # diretorio onde as wo seram registradas (sera pedido) e cada 1 tera 5 arquivos
+
 
 - Ao executar teremos a seguinte organixação para cada incidente setado:
 
