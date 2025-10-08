@@ -13,4 +13,4 @@
 # RESTART 2
     /usr/sbin/restart-secldapclntd
 
-*fonte:* https://www.ibm.com/docs/en/aix/7.2?topic=r-restart-secldapclntd-command<img width="799" height="431" alt="image" src="https://github.com/user-attachments/assets/ec097bc2-0ac2-4e90-919a-cbf583b050c0" />
+*fonte:* https://www.ibm.com/docs/en/aix/7.2?topic=r-restart-secldapclntd-command
