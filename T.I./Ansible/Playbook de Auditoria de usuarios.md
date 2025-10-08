@@ -3,13 +3,13 @@
 O playbook trata-se de uma validação nos ambientes linux e aix, que possuem acessos locais e ldap para questões de auditoria e validação dos usuarios e privilegios no ambiente.
 Nele vamos validar se o user ldap esta ativo ou se o usuario é local, grupos e privilegios no sudoers.
 
-- estrutura:
+- estrutura que deve estar no mesmo diretório:
 
-inventario_hosts.txt     # lista de hosts (inventário ansible - ja existe mas talvez falte servidor)
+inventario_hosts.txt     # lista de hosts (inventário ansible - pode ser fixo)
 
-user.txt                 # contém a variável user (nome do usuário a ser auditado)
+user.txt                 # contém a variável user (nome do usuário a ser auditado, ajustar conforme necessidade)
 
-playbook.yml             # playbook principal
+auditoria_de_usuarios.yml             # playbook 
 
 resultados            # diretorio onde as wo seram registradas (sera pedido) e cada 1 tera 5 arquivos
 
@@ -31,4 +31,9 @@ resultados/
     remocao_ok
     
 
-Obs uma melhoria seria deixar separado para cada usuario em especifico mas assim ele ja separa o todo indicando o usuario no arquivo criado do que ainda é necessario remover
+- comando de execussão:
+
+    ansible-playbook -i inventario_hosts.txt auditoria_de_usuarios.yml --ask-pass
+
+
+**Obs uma melhoria seria deixar separado para cada usuario em especifico mas assim ele ja separa o todo indicando o usuario no arquivo criado do que ainda é necessario remover
