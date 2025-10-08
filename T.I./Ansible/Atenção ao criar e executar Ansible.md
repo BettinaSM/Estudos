@@ -11,7 +11,7 @@
 - outras possibilidades de validação de erros do playbook:
   Verificação de Sintaxe do Ansible Playbook
 
-# Modo de Verificação
+##### Modo de Verificação
 
 O modo de verificação do Ansible permite que você execute um playbook sem fazer nenhuma alteração em seus sistemas. Isso é útil para testar e validar playbooks.
 
@@ -19,7 +19,7 @@ O modo de verificação do Ansible permite que você execute um playbook sem faz
 
 No modo de verificação, o Ansible simulará a execução do playbook e reportará as alterações que ele teria feito.
 
-# Modo Diff
+##### Modo Diff
 
 O modo Diff fornece comparações de antes e depois para tarefas que o suportam. Isso é útil para entender quais alterações serão feitas pelo playbook.
 
